@@ -1,0 +1,16 @@
+{
+  "directed": true,
+  "nodes": [
+    { "id": "a", "label": "A" },
+    { "id": "b", "label": "B" },
+    { "id": "c", "label": "C" },
+    { "id": "d", "label": "D" }
+  ],
+  "edges": [
+    { "from": "a", "to": "b", "label": "A->B" },
+    { "from": "c", "to": "d", "label": "C->D" },
+    { "from": "d", "to": "a", "label": "D->A" },
+    { "from": "a", "to": "c", "label": "A->C" },
+    { "from": "b", "to": "d", "label": "B to D" }
+  ]
+}

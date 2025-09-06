@@ -18,4 +18,6 @@ Then follow the instructions
 
 ## de_bruijn_graph_gen
 
-WIP
+Usage: `de_bruijn_graph_gen <alphabet> <n> <output.json>`
+
+Example: `de_bruijn_graph_gen 01 3 de_bruijn.json`
