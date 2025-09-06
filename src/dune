@@ -1,0 +1,3 @@
+(executables
+ (names graph2svg graph_maker de_bruijn_graph_gen)
+ (libraries yojson))
