@@ -41,6 +41,8 @@ let edge_to_json e =
     ("label", `String e.label)
   ]
 
+(* MAIN *)
+
 let () =
   print_endline "=== Graph Maker ===";
   let nodes = read_nodes [] in

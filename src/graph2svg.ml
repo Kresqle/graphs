@@ -1,10 +1,3 @@
-(* src/graph2svg.ml
-   Programme minimal : lit un JSON, calcule un layout Fruchterman-Reingold
-   et écrit un SVG.
-   Compilation : dune build
-   Exécution : dune exec ./src/graph2svg.exe -- example_graph.json out.svg 1200 800 400
-*)
-
 open Yojson.Basic.Util
 
 (* ---------- types ---------- *)
