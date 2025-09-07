@@ -70,7 +70,7 @@ let escape_xml s =
   ) s;
   Buffer.contents buf
 
-(* ---------- force-directed layout (Fruchterman–Reingold) ---------- *)
+(* ---------- force-directed layout (Fruchterman-Reingold) ---------- *)
 
 let fr_layout ~width ~height ~iterations graph =
   let n = List.length graph.nodes in
@@ -124,18 +124,20 @@ let fr_layout ~width ~height ~iterations graph =
       done
     done;
 
-    (* attractive forces on edges *)
+    (* attractive forces on edges - skip self-loops *)
     List.iter (fun (u,v,_) ->
-      let (xu,yu) = pos.(u) in
-      let (xv,yv) = pos.(v) in
-      let dx = xu -. xv in
-      let dy = yu -. yv in
-      let dist = sqrt (dx*.dx +. dy*.dy) |> max epsilon in
-      let force = (dist*.dist) /. k in
-      let ux = dx /. dist in
-      let uy = dy /. dist in
-      add_disp u (-. ux *. force, -. uy *. force);
-      add_disp v (ux *. force, uy *. force)
+      if u <> v then begin
+        let (xu,yu) = pos.(u) in
+        let (xv,yv) = pos.(v) in
+        let dx = xu -. xv in
+        let dy = yu -. yv in
+        let dist = sqrt (dx*.dx +. dy*.dy) |> max epsilon in
+        let force = (dist*.dist) /. k in
+        let ux = dx /. dist in
+        let uy = dy /. dist in
+        add_disp u (-. ux *. force, -. uy *. force);
+        add_disp v (ux *. force, uy *. force)
+      end
     ) edges_idx;
 
     (* apply displacements with temperature cap and keep inside box *)
@@ -151,7 +153,7 @@ let fr_layout ~width ~height ~iterations graph =
       let newx = x +. ux *. disp_len in
       let newy = y +. uy *. disp_len in
       (* clamp inside margins *)
-      let margin = 20. in
+      let margin = 100. in
       let minx = margin and maxx = (float_of_int width) -. margin in
       let miny = margin and maxy = (float_of_int height) -. margin in
       let nx = if newx < minx then minx else if newx > maxx then maxx else newx in
@@ -168,6 +170,58 @@ let fr_layout ~width ~height ~iterations graph =
 
 let node_radius = 14.0
 
+(* Function to find the best direction for a self-loop to minimize overlap *)
+let find_best_loop_direction node_pos all_positions width height =
+  let (cx, cy) = node_pos in
+  let loop_radius = node_radius *. 2.5 in
+  
+  (* Test 8 directions: up, down, left, right, and 4 diagonals *)
+  let directions = [
+    (0., -1.);      (* up *)
+    (0., 1.);       (* down *)
+    (-1., 0.);      (* left *)
+    (1., 0.);       (* right *)
+    (-0.707, -0.707); (* up-left *)
+    (0.707, -0.707);  (* up-right *)
+    (-0.707, 0.707);  (* down-left *)
+    (0.707, 0.707);   (* down-right *)
+  ] in
+  
+  let score_direction (dx, dy) =
+    let loop_cx = cx +. dx *. loop_radius in
+    let loop_cy = cy +. dy *. loop_radius in
+    
+    (* Check bounds penalty - now loops should fit within canvas *)
+    let bounds_penalty =
+      let margin = loop_radius in
+      (if loop_cx < margin then margin -. loop_cx else 0.) +.
+      (if loop_cx > float_of_int width -. margin then loop_cx -. (float_of_int width -. margin) else 0.) +.
+      (if loop_cy < margin then margin -. loop_cy else 0.) +.
+      (if loop_cy > float_of_int height -. margin then loop_cy -. (float_of_int height -. margin) else 0.)
+    in
+    
+    (* Check overlap with other nodes *)
+    let overlap_penalty = 
+      Array.fold_left (fun acc (ox, oy) ->
+        if (ox, oy) = node_pos then acc else
+        let dist = sqrt ((loop_cx -. ox) *. (loop_cx -. ox) +. (loop_cy -. oy) *. (loop_cy -. oy)) in
+        if dist < loop_radius +. node_radius +. 10. then
+          acc +. (loop_radius +. node_radius +. 10. -. dist)
+        else acc
+      ) 0. all_positions
+    in
+    
+    bounds_penalty +. overlap_penalty *. 2.
+  in
+  
+  (* Find direction with minimum penalty *)
+  let best_dir = List.fold_left (fun (best_dir, best_score) dir ->
+    let score = score_direction dir in
+    if score < best_score then (dir, score) else (best_dir, best_score)
+  ) (List.hd directions, score_direction (List.hd directions)) (List.tl directions) in
+  
+  fst best_dir
+
 let render_svg ~width ~height ~directed ids labels pos edges out_chan =
   let pr fmt = Printf.fprintf out_chan fmt in
   pr "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
@@ -181,31 +235,69 @@ let render_svg ~width ~height ~directed ids labels pos edges out_chan =
   );
   pr "<rect width='100%%' height='100%%' fill='white' />\n";
 
-  (* edges (straight lines) *)
+  (* edges *)
   List.iter (fun (u,v,label) ->
-    let (xu,yu) = pos.(u) in
-    let (xv,yv) = pos.(v) in
-    (* shorten line so it doesn't go inside the circles *)
-    let dx = xv -. xu in
-    let dy = yv -. yu in
-    let d = sqrt (dx*.dx +. dy*.dy) |> max 1e-6 in
-    let ux = dx /. d and uy = dy /. d in
-    let startx = xu +. ux *. node_radius in
-    let starty = yu +. uy *. node_radius in
-    let endx = xv -. ux *. node_radius in
-    let endy = yv -. uy *. node_radius in
-    if directed then
-      pr "<line x1='%f' y1='%f' x2='%f' y2='%f' stroke='#999' stroke-width='1.5' marker-end='url(#arrow)' />\n"
-        startx starty endx endy
-    else
-      pr "<line x1='%f' y1='%f' x2='%f' y2='%f' stroke='#999' stroke-width='1.2' />\n"
-        startx starty endx endy;
-    (* label at midpoint *)
-    if label <> "" then
-      let mx = (startx +. endx) /. 2. in
-      let my = (starty +. endy) /. 2. in
-      pr "<text x='%f' y='%f' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>%s</text>\n"
-        mx my (escape_xml label)
+    if u = v then begin
+      (* Self-loop *)
+      let (cx, cy) = pos.(u) in
+      let loop_radius = node_radius *. 2.5 in
+      let (dx, dy) = find_best_loop_direction pos.(u) pos width height in
+      
+      let loop_cx = cx +. dx *. loop_radius in
+      let loop_cy = cy +. dy *. loop_radius in
+      
+      (* Calculate start and end points on the node circle *)
+      let angle_offset = Float.pi /. 6. in (* 30 degrees *)
+      let start_angle = atan2 dy dx +. angle_offset in
+      let end_angle = atan2 dy dx -. angle_offset in
+      
+      let start_x = cx +. cos start_angle *. node_radius in
+      let start_y = cy +. sin start_angle *. node_radius in
+      let end_x = cx +. cos end_angle *. node_radius in
+      let end_y = cy +. sin end_angle *. node_radius in
+      
+      (* Create SVG arc path *)
+      let large_arc_flag = 1 in (* Always use large arc for loops *)
+      let sweep_flag = 1 in (* Positive direction *)
+      
+      if directed then (
+        pr "<path d='M %f %f A %f %f 0 %d %d %f %f' stroke='#999' stroke-width='1.5' fill='none' marker-end='url(#arrow)' />\n"
+          start_x start_y loop_radius loop_radius large_arc_flag sweep_flag end_x end_y
+      ) else (
+        pr "<path d='M %f %f A %f %f 0 %d %d %f %f' stroke='#999' stroke-width='1.2' fill='none' />\n"
+          start_x start_y loop_radius loop_radius large_arc_flag sweep_flag end_x end_y
+      );
+      
+      (* Label at the loop center *)
+      if label <> "" then
+        pr "<text x='%f' y='%f' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>%s</text>\n"
+          loop_cx loop_cy (escape_xml label)
+    end else begin
+      (* Regular edge *)
+      let (xu,yu) = pos.(u) in
+      let (xv,yv) = pos.(v) in
+      (* shorten line so it doesn't go inside the circles *)
+      let dx = xv -. xu in
+      let dy = yv -. yu in
+      let d = sqrt (dx*.dx +. dy*.dy) |> max 1e-6 in
+      let ux = dx /. d and uy = dy /. d in
+      let startx = xu +. ux *. node_radius in
+      let starty = yu +. uy *. node_radius in
+      let endx = xv -. ux *. node_radius in
+      let endy = yv -. uy *. node_radius in
+      if directed then
+        pr "<line x1='%f' y1='%f' x2='%f' y2='%f' stroke='#999' stroke-width='1.5' marker-end='url(#arrow)' />\n"
+          startx starty endx endy
+      else
+        pr "<line x1='%f' y1='%f' x2='%f' y2='%f' stroke='#999' stroke-width='1.2' />\n"
+          startx starty endx endy;
+      (* label at midpoint *)
+      if label <> "" then
+        let mx = (startx +. endx) /. 2. in
+        let my = (starty +. endy) /. 2. in
+        pr "<text x='%f' y='%f' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>%s</text>\n"
+          mx my (escape_xml label)
+    end
   ) edges;
 
   (* nodes *)
