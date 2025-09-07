@@ -2,8 +2,23 @@ Examples of De Bruijn graphs generated using `de_bruijn_graph_gen.ml`.
 
 All of the graphs generated are visualized using `graph2svg.ml`.
 
-Note that as of right now, looping edges are not supported and thus the graphs
-are theoratically incomplete (visually). Hopefully this issue will be fixed.
+## De Bruijn graphs
+
+In graph theory, an $n$-dimensional De Bruijn graph of $k$ symbols (that is,
+on an alphabet of $k$ symbols) is a directed graph representing overlaps between
+sequences of symbols of length $n$ (the same symbol may appear multiple times in 
+a sequence).
+
+From now on, let $B(k, n)$ be the $n$-dimensional De Bruijn of $k$ symbols.
+
+## Stats
+
+$\forall (k, n) \in (\mathbb{N}^*)^2, B(k, n) = (V, E)$ such that $|V| = k^n$ and $|E| = k^{n + 1} = k|V|$
+
+| Graph | Nodes | Edges |
+| ----- | ----- | ----- |
+| [B(2, 3)](https://github.com/Kresqle/graphs/blob/main/examples/de_bruijn_graph_gen/examples.md#b2-3) | 8 | 16 |
+| [B(4, 3)](https://github.com/Kresqle/graphs/blob/main/examples/de_bruijn_graph_gen/examples.md#b4-3) | 64 | 256 |
 
 ## B(2, 3)
 
@@ -14,42 +29,23 @@ kamal@lnx:graphs$ dune exec ./_build/default/src/de_bruijn_graph_gen.exe 01 3 b_
 Graph B(2,3) written to b_2_3.json
 ```
 
-Output :
-
-```json
-{
-  "directed": true,
-  "nodes": [
-    { "id": "000", "label": "000" },
-    { "id": "001", "label": "001" },
-    { "id": "010", "label": "010" },
-    { "id": "011", "label": "011" },
-    { "id": "100", "label": "100" },
-    { "id": "101", "label": "101" },
-    { "id": "110", "label": "110" },
-    { "id": "111", "label": "111" }
-  ],
-  "edges": [
-    { "from": "000", "to": "000", "label": "0000" },
-    { "from": "000", "to": "001", "label": "0001" },
-    { "from": "001", "to": "010", "label": "0010" },
-    { "from": "001", "to": "011", "label": "0011" },
-    { "from": "010", "to": "100", "label": "0100" },
-    { "from": "010", "to": "101", "label": "0101" },
-    { "from": "011", "to": "110", "label": "0110" },
-    { "from": "011", "to": "111", "label": "0111" },
-    { "from": "100", "to": "000", "label": "1000" },
-    { "from": "100", "to": "001", "label": "1001" },
-    { "from": "101", "to": "010", "label": "1010" },
-    { "from": "101", "to": "011", "label": "1011" },
-    { "from": "110", "to": "100", "label": "1100" },
-    { "from": "110", "to": "101", "label": "1101" },
-    { "from": "111", "to": "110", "label": "1110" },
-    { "from": "111", "to": "111", "label": "1111" }
-  ]
-}
-```
+Output : [JSON for B(2,3)](https://github.com/Kresqle/graphs/blob/main/examples/de_bruijn_graph_gen/b_2_3.json)
 
 Result :
 
 ![de_bruijn_graph_gen example 1](https://github.com/Kresqle/graphs/blob/main/examples/de_bruijn_graph_gen/b_2_3.svg?raw=true)
+
+## B(4, 3)
+
+Input :
+
+```bash
+kamal@lnx:graphs$ dune exec ./_build/default/src/de_bruijn_graph_gen.exe 0123 3 b_4_3.json
+Graph B(4,3) written to b43.json
+```
+
+Output : [JSON for B(4,3)](https://github.com/Kresqle/graphs/blob/main/examples/de_bruijn_graph_gen/b_4_3.json)
+
+Result :
+
+![de_bruijn_graph_gen example 1](https://github.com/Kresqle/graphs/blob/main/examples/de_bruijn_graph_gen/b_4_3.svg?raw=true)
