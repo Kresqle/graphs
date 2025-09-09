@@ -15,18 +15,18 @@ $\forall (k, n) \in (\mathbb{N}^*)^2, B(k, n) = (V, E)$ such that $|V| = k^n$ an
 
 | Graph | Nodes | Edges | Time to generate | Time to render |
 | ----- | ----- | ----- | ---------------- | -------------- |
-| [B(1, 1)](https://github.com/Kresqle/graphs/blob/main/examples/de_bruijn_graph_gen.md#b1-1) | 1 | 1 | 0,055s | 0,057s |
-| [B(1, 2)](https://github.com/Kresqle/graphs/blob/main/examples/de_bruijn_graph_gen.md#b1-2) | 1 | 1 | 0,053s | 0,054s |
-| [B(1, 3)](https://github.com/Kresqle/graphs/blob/main/examples/de_bruijn_graph_gen.md#b1-3) | 1 | 1 | 0,055s | 0,055s |
-| [B(2, 1)](https://github.com/Kresqle/graphs/blob/main/examples/de_bruijn_graph_gen.md#b2-1) | 2 | 4 | 0,054s | 0,060s |
-| [B(2, 2)](https://github.com/Kresqle/graphs/blob/main/examples/de_bruijn_graph_gen.md#b2-2) | 4 | 8 | 0,058s | 0,057s |
-| [B(2, 3)](https://github.com/Kresqle/graphs/blob/main/examples/de_bruijn_graph_gen.md#b2-3) | 8 | 16 | 0,055s | 0,059s |
-| [B(3, 1)](https://github.com/Kresqle/graphs/blob/main/examples/de_bruijn_graph_gen.md#b3-1) | 3 | 9 | 0,054s | 0,056s |
-| [B(3, 2)](https://github.com/Kresqle/graphs/blob/main/examples/de_bruijn_graph_gen.md#b3-2) | 9 | 27 | 0,054s | 0,059s |
-| [B(3, 3)](https://github.com/Kresqle/graphs/blob/main/examples/de_bruijn_graph_gen.md#b3-3) | 27 | 81 | 0,058s | 0,069s |
-| [B(4, 1)](https://github.com/Kresqle/graphs/blob/main/examples/de_bruijn_graph_gen.md#b4-1) | 4 | 16 | 0,048s | 0,051s |
-| [B(4, 2)](https://github.com/Kresqle/graphs/blob/main/examples/de_bruijn_graph_gen.md#b4-2) | 16 | 64 | 0,051s | 0,057s |
-| [B(4, 3)](https://github.com/Kresqle/graphs/blob/main/examples/de_bruijn_graph_gen.md#b4-3) | 64 | 256 | 0,055s | 0,122s |
+| [B(1, 1)](https://github.com/Kresqle/graphs/blob/main/examples/de_bruijn_graph_gen.md#b1-1) | 1 | 1 | 0,055s | 0,054s |
+| [B(1, 2)](https://github.com/Kresqle/graphs/blob/main/examples/de_bruijn_graph_gen.md#b1-2) | 1 | 1 | 0,053s | 0,055s |
+| [B(1, 3)](https://github.com/Kresqle/graphs/blob/main/examples/de_bruijn_graph_gen.md#b1-3) | 1 | 1 | 0,053s | 0,056s |
+| [B(2, 1)](https://github.com/Kresqle/graphs/blob/main/examples/de_bruijn_graph_gen.md#b2-1) | 2 | 4 | 0,055s | 0,056s |
+| [B(2, 2)](https://github.com/Kresqle/graphs/blob/main/examples/de_bruijn_graph_gen.md#b2-2) | 4 | 8 | 0,060s | 0,058s |
+| [B(2, 3)](https://github.com/Kresqle/graphs/blob/main/examples/de_bruijn_graph_gen.md#b2-3) | 8 | 16 | 0,054s | 0,059s |
+| [B(3, 1)](https://github.com/Kresqle/graphs/blob/main/examples/de_bruijn_graph_gen.md#b3-1) | 3 | 9 | 0,057s | 0,057s |
+| [B(3, 2)](https://github.com/Kresqle/graphs/blob/main/examples/de_bruijn_graph_gen.md#b3-2) | 9 | 27 | 0,055s | 0,058s |
+| [B(3, 3)](https://github.com/Kresqle/graphs/blob/main/examples/de_bruijn_graph_gen.md#b3-3) | 27 | 81 | 0,059s | 0,070s |
+| [B(4, 1)](https://github.com/Kresqle/graphs/blob/main/examples/de_bruijn_graph_gen.md#b4-1) | 4 | 16 | 0,056s | 0,057s |
+| [B(4, 2)](https://github.com/Kresqle/graphs/blob/main/examples/de_bruijn_graph_gen.md#b4-2) | 16 | 64 | 0,049s | 0,057s |
+| [B(4, 3)](https://github.com/Kresqle/graphs/blob/main/examples/de_bruijn_graph_gen.md#b4-3) | 64 | 256 | 0,053s | 0,122s |
 
 ## B(1, 1)
 
