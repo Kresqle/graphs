@@ -39,7 +39,7 @@ doc_dbgg() {
             
             # echo "b_${k}_${n}.json took $GEN_TIME to generate and $RENDER_TIME to render"
             
-            table="${table}| [B(${k}, ${n})](https://github.com/Kresqle/graphs/blob/main/examples/de_bruijn_graph_gen/examples.md#b${k}-${n}) "
+            table="${table}| [B(${k}, ${n})](https://github.com/Kresqle/graphs/blob/main/examples/de_bruijn_graph_gen.md#b${k}-${n}) "
             table="${table}| $((k ** n)) "
             table="${table}| $((k ** (n + 1))) "
             table="${table}| ${GEN_TIME}s "
