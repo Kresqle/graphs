@@ -10,6 +10,8 @@ Usage: `dune exec ./_build/default/src/graph2svg.exe <input.json> <output.svg> [
 
 Example : `dune exec ./_build/default/src/graph2svg.exe graph.json out.svg 1200 800 500`
 
+> Can produce overlapping edges
+
 ## graph_maker
 
 Usage: `dune exec ./_build/default/src/graph_maker.exe`
