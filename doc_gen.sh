@@ -26,9 +26,9 @@ doc_dbgg() {
     
     # De Bruijn graphs
     printf "## De Bruijn graphs\n\n" >> "${example_path}.md"
-    printf "In graph theory, an $n$-dimensional De Bruijn graph of $k$ symbols (that is,\n" >> "${example_path}.md"
-    printf "on an alphabet of $k$ symbols) is a directed graph representing overlaps between\n" >> "${example_path}.md"
-    printf "sequences of symbols of length $n$ (the same symbol may appear multiple times in\n" >> "${example_path}.md"
+    printf "In graph theory, an \$n\$-dimensional De Bruijn graph of \$k\$ symbols (that is,\n" >> "${example_path}.md"
+    printf "on an alphabet of \$k\$ symbols) is a directed graph representing overlaps between\n" >> "${example_path}.md"
+    printf "sequences of symbols of length \$n\$ (the same symbol may appear multiple times in\n" >> "${example_path}.md"
     printf "a sequence).\n\n" >> "${example_path}.md"
     
     # Stats
