@@ -1,0 +1,5 @@
+{
+  "directed": true,
+  "nodes": [ { "id": "0", "label": "0" } ],
+  "edges": [ { "from": "0", "to": "0", "label": "00" } ]
+}

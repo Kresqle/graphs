@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='800' viewBox='0 0 1200 800'>
+<defs>
+<marker id='arrow' viewBox='0 0 10 10' refX='10' refY='5' markerUnits='strokeWidth' markerWidth='8' markerHeight='6' orient='auto'>
+<path d='M 0 0 L 10 5 L 0 10 z' />
+</marker>
+</defs>
+<rect width='100%' height='100%' fill='white' />
+<path d='M 227.606686 331.771769 A 35.000000 35.000000 0 1 1 213.606686 331.771769' stroke='#999' stroke-width='1.5' fill='none' marker-end='url(#arrow)' />
+<text x='220.606686' y='308.896124' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>000</text>
+<line x1='223.575393' y1='357.577746' x2='269.686566' y2='570.086328' stroke='#999' stroke-width='1.5' marker-end='url(#arrow)' />
+<text x='246.630979' y='463.832037' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>001</text>
+<line x1='234.455363' y1='341.843287' x2='582.918571' y2='290.189364' stroke='#999' stroke-width='1.5' marker-end='url(#arrow)' />
+<text x='408.686967' y='316.016325' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>002</text>
+<line x1='231.370658' y1='334.944202' x2='423.186095' y2='175.419732' stroke='#999' stroke-width='1.5' marker-end='url(#arrow)' />
+<text x='327.278376' y='255.181967' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>003</text>
+<line x1='284.909276' y1='576.997470' x2='359.815609' y2='535.610843' stroke='#999' stroke-width='1.5' marker-end='url(#arrow)' />
+<text x='322.362442' y='556.304156' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>010</text>
+<line x1='284.573987' y1='591.112625' x2='449.354394' y2='692.655325' stroke='#999' stroke-width='1.5' marker-end='url(#arrow)' />
+<text x='366.964191' y='641.883975' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>011</text>
+<line x1='286.281714' y1='586.980441' x2='691.138019' y2='682.427010' stroke='#999' stroke-width='1.5' marker-end='url(#arrow)' />
+<text x='488.709867' y='634.703725' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>012</text>
+<line x1='281.563008' y1='572.967383' x2='442.277804' y2='378.101802' stroke='#999' stroke-width='1.5' marker-end='url(#arrow)' />
+<text x='361.920406' y='475.534592' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>013</text>
+<line x1='600.091178' y1='301.736213' x2='624.562645' y2='401.859943' stroke='#999' stroke-width='1.5' marker-end='url(#arrow)' />
+<text x='612.326912' y='351.798078' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>020</text>
+<line x1='603.750957' y1='300.270272' x2='739.902300' y2='536.824486' stroke='#999' stroke-width='1.5' marker-end='url(#arrow)' />
+<text x='671.826629' y='418.547379' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>021</text>
+<line x1='609.680723' y1='293.544128' x2='937.108480' y2='430.656639' stroke='#999' stroke-width='1.5' marker-end='url(#arrow)' />
+<text x='773.394601' y='362.100384' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>022</text>
+<line x1='610.749455' y1='288.842135' x2='760.525678' y2='296.400561' stroke='#999' stroke-width='1.5' marker-end='url(#arrow)' />
+<text x='685.637567' y='292.621348' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>023</text>
+<line x1='419.976039' y1='167.320193' x2='330.152883' y2='172.799200' stroke='#999' stroke-width='1.5' marker-end='url(#arrow)' />
+<text x='375.064461' y='170.059697' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>030</text>
+<line x1='438.112464' y1='179.834726' x2='530.500462' y2='476.524969' stroke='#999' stroke-width='1.5' marker-end='url(#arrow)' />
+<text x='484.306463' y='328.179848' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>031</text>
+<line x1='447.946637' y1='166.777691' x2='783.716260' y2='174.211555' stroke='#999' stroke-width='1.5' marker-end='url(#arrow)' />
+<text x='615.831448' y='170.494623' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>032</text>
+<line x1='446.604451' y1='160.478941' x2='561.741110' y2='105.988869' stroke='#999' stroke-width='1.5' marker-end='url(#arrow)' />
+<text x='504.172781' y='133.233905' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>033</text>
+<line x1='363.199200' y1='518.009121' x2='229.477098' y2='354.727366' stroke='#999' stroke-width='1.5' marker-end='url(#arrow)' />
+<text x='296.338149' y='436.368244' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>100</text>
+<line x1='359.815609' y1='535.610843' x2='284.909276' y2='576.997470' stroke='#999' stroke-width='1.5' marker-end='url(#arrow)' />
+<text x='322.362442' y='556.304156' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>101</text>
+<line x1='381.622993' y1='518.606453' x2='587.213867' y2='298.370436' stroke='#999' stroke-width='1.5' marker-end='url(#arrow)' />
+<text x='484.418430' y='408.488444' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>102</text>
+<line x1='374.426205' y1='515.040129' x2='431.593473' y2='180.268044' stroke='#999' stroke-width='1.5' marker-end='url(#arrow)' />
+<text x='403.009839' y='347.654086' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>103</text>
+<line x1='454.802726' y1='687.584922' x2='378.539994' y2='541.255440' stroke='#999' stroke-width='1.5' marker-end='url(#arrow)' />
+<text x='416.671360' y='614.420181' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>110</text>
+<path d='M 468.273109 687.875644 A 35.000000 35.000000 0 1 1 454.273109 687.875644' stroke='#999' stroke-width='1.5' fill='none' marker-end='url(#arrow)' />
+<text x='461.273109' y='665.000000' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>111</text>
+<line x1='475.248824' y1='699.175748' x2='690.788746' y2='686.463753' stroke='#999' stroke-width='1.5' marker-end='url(#arrow)' />
+<text x='583.018785' y='692.819750' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>112</text>
+<line x1='460.848818' y1='686.006431' x2='451.609831' y2='381.294803' stroke='#999' stroke-width='1.5' marker-end='url(#arrow)' />
+<text x='456.229324' y='533.650617' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>113</text>
+<line x1='700.932944' y1='672.174008' x2='631.718092' y2='428.925122' stroke='#999' stroke-width='1.5' marker-end='url(#arrow)' />
+<text x='666.325518' y='550.549565' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>120</text>
+<line x1='708.887544' y1='672.260406' x2='742.762927' y2='562.337328' stroke='#999' stroke-width='1.5' marker-end='url(#arrow)' />
+<text x='725.825235' y='617.298867' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>121</text>
+<line x1='714.577202' y1='675.654006' x2='940.209214' y2='446.049736' stroke='#999' stroke-width='1.5' marker-end='url(#arrow)' />
+<text x='827.393208' y='560.851871' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>122</text>
+<line x1='707.237987' y1='671.859745' x2='772.034359' y2='310.885925' stroke='#999' stroke-width='1.5' marker-end='url(#arrow)' />
+<text x='739.636173' y='491.372835' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>123</text>
+<line x1='443.178896' y1='355.816738' x2='324.185499' y2='185.136080' stroke='#999' stroke-width='1.5' marker-end='url(#arrow)' />
+<text x='383.682197' y='270.476409' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>130</text>
+<line x1='459.065345' y1='378.873126' x2='526.783053' y2='478.319994' stroke='#999' stroke-width='1.5' marker-end='url(#arrow)' />
+<text x='492.924199' y='428.596560' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>131</text>
+<line x1='463.419773' y1='360.495095' x2='785.478596' y2='181.327575' stroke='#999' stroke-width='1.5' marker-end='url(#arrow)' />
+<text x='624.449185' y='270.911335' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>132</text>
+<line x1='457.046085' y1='354.586912' x2='568.534949' y2='112.714323' stroke='#999' stroke-width='1.5' marker-end='url(#arrow)' />
+<text x='512.790517' y='233.650617' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>133</text>
+<line x1='614.097817' y1='413.036795' x2='234.395445' y2='346.318959' stroke='#999' stroke-width='1.5' marker-end='url(#arrow)' />
+<text x='424.246631' y='379.677877' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>200</text>
+<line x1='615.234809' y1='421.454027' x2='285.307039' y2='577.773553' stroke='#999' stroke-width='1.5' marker-end='url(#arrow)' />
+<text x='450.270924' y='499.613790' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>201</text>
+<line x1='624.562645' y1='401.859943' x2='600.091178' y2='301.736213' stroke='#999' stroke-width='1.5' marker-end='url(#arrow)' />
+<text x='612.326912' y='351.798078' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>202</text>
+<line x1='619.283775' y1='404.414639' x2='442.552867' y2='177.512801' stroke='#999' stroke-width='1.5' marker-end='url(#arrow)' />
+<text x='530.918321' y='290.963720' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>203</text>
+<line x1='732.906133' y1='548.207878' x2='386.049489' y2='529.590718' stroke='#999' stroke-width='1.5' marker-end='url(#arrow)' />
+<text x='559.477811' y='538.899298' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>210</text>
+<line x1='734.510023' y1='555.503074' x2='473.649096' y2='693.455159' stroke='#999' stroke-width='1.5' marker-end='url(#arrow)' />
+<text x='604.079559' y='624.479116' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>211</text>
+<line x1='742.762927' y1='562.337328' x2='708.887544' y2='672.260406' stroke='#999' stroke-width='1.5' marker-end='url(#arrow)' />
+<text x='725.825235' y='617.298867' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>212</text>
+<line x1='734.957170' y1='541.630015' x2='463.114380' y2='374.629452' stroke='#999' stroke-width='1.5' marker-end='url(#arrow)' />
+<text x='599.035775' y='458.129734' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>213</text>
+<line x1='936.050506' y1='435.170592' x2='641.858025' y2='416.353280' stroke='#999' stroke-width='1.5' marker-end='url(#arrow)' />
+<text x='788.954265' y='425.761936' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>220</text>
+<line x1='937.784794' y1='442.865116' x2='759.123171' y2='542.157359' stroke='#999' stroke-width='1.5' marker-end='url(#arrow)' />
+<text x='848.453982' y='492.511237' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>221</text>
+<path d='M 957.021955 423.939886 A 35.000000 35.000000 0 1 1 943.021955 423.939886' stroke='#999' stroke-width='1.5' fill='none' marker-end='url(#arrow)' />
+<text x='950.021955' y='401.064242' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>222</text>
+<line x1='939.045601' y1='427.374038' x2='785.484240' y2='305.796374' stroke='#999' stroke-width='1.5' marker-end='url(#arrow)' />
+<text x='862.264920' y='366.585206' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>223</text>
+<line x1='760.989697' y1='293.464938' x2='329.697044' y2='177.292815' stroke='#999' stroke-width='1.5' marker-end='url(#arrow)' />
+<text x='545.343370' y='235.378876' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>230</text>
+<line x1='763.595940' y1='305.877113' x2='545.574804' y2='481.120942' stroke='#999' stroke-width='1.5' marker-end='url(#arrow)' />
+<text x='654.585372' y='393.499028' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>231</text>
+<line x1='777.111803' y1='283.350458' x2='795.108912' y2='188.277148' stroke='#999' stroke-width='1.5' marker-end='url(#arrow)' />
+<text x='786.110358' y='235.813803' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>232</text>
+<line x1='764.533755' y1='287.281877' x2='584.369625' y2='109.824292' stroke='#999' stroke-width='1.5' marker-end='url(#arrow)' />
+<text x='674.451690' y='198.553085' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>233</text>
+<line x1='309.325571' y1='185.859470' x2='227.459970' y2='331.688238' stroke='#999' stroke-width='1.5' marker-end='url(#arrow)' />
+<text x='268.392770' y='258.773854' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>300</text>
+<line x1='314.701402' y1='187.573405' x2='274.132725' y2='569.846128' stroke='#999' stroke-width='1.5' marker-end='url(#arrow)' />
+<text x='294.417064' y='378.709767' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>301</text>
+<line x1='329.141384' y1='178.940520' x2='583.804719' y2='282.847589' stroke='#999' stroke-width='1.5' marker-end='url(#arrow)' />
+<text x='456.473051' y='230.894055' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>302</text>
+<line x1='330.152883' y1='172.799200' x2='419.976039' y2='167.320193' stroke='#999' stroke-width='1.5' marker-end='url(#arrow)' />
+<text x='375.064461' y='170.059697' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>303</text>
+<line x1='521.048033' y1='493.153255' x2='385.684437' y2='525.578993' stroke='#999' stroke-width='1.5' marker-end='url(#arrow)' />
+<text x='453.366235' y='509.366124' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>310</text>
+<line x1='530.046253' y1='503.108805' x2='465.889715' y2='686.783081' stroke='#999' stroke-width='1.5' marker-end='url(#arrow)' />
+<text x='497.967984' y='594.945943' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>311</text>
+<line x1='543.845864' y1='500.459402' x2='695.581455' y2='675.071984' stroke='#999' stroke-width='1.5' marker-end='url(#arrow)' />
+<text x='619.713660' y='587.765693' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>312</text>
+<line x1='526.783053' y1='478.319994' x2='459.065345' y2='378.873126' stroke='#999' stroke-width='1.5' marker-end='url(#arrow)' />
+<text x='492.924199' y='428.596560' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>313</text>
+<line x1='789.647121' y1='185.964527' x2='635.952285' y2='404.016538' stroke='#999' stroke-width='1.5' marker-end='url(#arrow)' />
+<text x='712.799703' y='294.990533' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>320</text>
+<line x1='795.829711' y1='188.394210' x2='748.769129' y2='535.085459' stroke='#999' stroke-width='1.5' marker-end='url(#arrow)' />
+<text x='772.299420' y='361.739834' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>321</text>
+<line x1='804.758135' y1='186.619522' x2='942.976650' y2='423.966156' stroke='#999' stroke-width='1.5' marker-end='url(#arrow)' />
+<text x='873.867392' y='305.292839' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>322</text>
+<line x1='795.108912' y1='188.277148' x2='777.111803' y2='283.350458' stroke='#999' stroke-width='1.5' marker-end='url(#arrow)' />
+<text x='786.110358' y='235.813803' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>323</text>
+<line x1='560.932445' y1='103.840089' x2='329.641905' y2='169.811494' stroke='#999' stroke-width='1.5' marker-end='url(#arrow)' />
+<text x='445.287175' y='136.825792' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>330</text>
+<line x1='572.976150' y1='113.927866' x2='536.082203' y2='475.964019' stroke='#999' stroke-width='1.5' marker-end='url(#arrow)' />
+<text x='554.529177' y='294.945943' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>331</text>
+<line x1='587.675592' y1='104.431595' x2='784.432733' y2='170.089841' stroke='#999' stroke-width='1.5' marker-end='url(#arrow)' />
+<text x='686.054162' y='137.260718' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>332</text>
+<path d='M 581.395495 87.875644 A 35.000000 35.000000 0 1 1 567.395495 87.875644' stroke='#999' stroke-width='1.5' fill='none' marker-end='url(#arrow)' />
+<text x='574.395495' y='65.000000' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>333</text>
+<g class='node'>
+<circle cx='220.606686' cy='343.896124' r='14.000000' fill='#69b3a2' stroke='#333' stroke-width='1.2' />
+<text x='220.606686' y='343.896124' font-family='Arial' font-size='12' text-anchor='middle' alignment-baseline='middle' fill='white'>00</text>
+</g>
+<g class='node'>
+<circle cx='272.655273' cy='583.767950' r='14.000000' fill='#69b3a2' stroke='#333' stroke-width='1.2' />
+<text x='272.655273' y='583.767950' font-family='Arial' font-size='12' text-anchor='middle' alignment-baseline='middle' fill='white'>01</text>
+</g>
+<g class='node'>
+<circle cx='596.767248' cy='288.136526' r='14.000000' fill='#69b3a2' stroke='#333' stroke-width='1.2' />
+<text x='596.767248' y='288.136526' font-family='Arial' font-size='12' text-anchor='middle' alignment-baseline='middle' fill='white'>02</text>
+</g>
+<g class='node'>
+<circle cx='433.950067' cy='166.467810' r='14.000000' fill='#69b3a2' stroke='#333' stroke-width='1.2' />
+<text x='433.950067' y='166.467810' font-family='Arial' font-size='12' text-anchor='middle' alignment-baseline='middle' fill='white'>03</text>
+</g>
+<g class='node'>
+<circle cx='372.069612' cy='528.840363' r='14.000000' fill='#69b3a2' stroke='#333' stroke-width='1.2' />
+<text x='372.069612' y='528.840363' font-family='Arial' font-size='12' text-anchor='middle' alignment-baseline='middle' fill='white'>10</text>
+</g>
+<g class='node'>
+<circle cx='461.273109' cy='700.000000' r='14.000000' fill='#69b3a2' stroke='#333' stroke-width='1.2' />
+<text x='461.273109' y='700.000000' font-family='Arial' font-size='12' text-anchor='middle' alignment-baseline='middle' fill='white'>11</text>
+</g>
+<g class='node'>
+<circle cx='704.764461' cy='685.639501' r='14.000000' fill='#69b3a2' stroke='#333' stroke-width='1.2' />
+<text x='704.764461' y='685.639501' font-family='Arial' font-size='12' text-anchor='middle' alignment-baseline='middle' fill='white'>12</text>
+</g>
+<g class='node'>
+<circle cx='451.185540' cy='367.301234' r='14.000000' fill='#69b3a2' stroke='#333' stroke-width='1.2' />
+<text x='451.185540' y='367.301234' font-family='Arial' font-size='12' text-anchor='middle' alignment-baseline='middle' fill='white'>13</text>
+</g>
+<g class='node'>
+<circle cx='627.886576' cy='415.459630' r='14.000000' fill='#69b3a2' stroke='#333' stroke-width='1.2' />
+<text x='627.886576' y='415.459630' font-family='Arial' font-size='12' text-anchor='middle' alignment-baseline='middle' fill='white'>20</text>
+</g>
+<g class='node'>
+<circle cx='746.886010' cy='548.958233' r='14.000000' fill='#69b3a2' stroke='#333' stroke-width='1.2' />
+<text x='746.886010' y='548.958233' font-family='Arial' font-size='12' text-anchor='middle' alignment-baseline='middle' fill='white'>21</text>
+</g>
+<g class='node'>
+<circle cx='950.021955' cy='436.064242' r='14.000000' fill='#69b3a2' stroke='#333' stroke-width='1.2' />
+<text x='950.021955' y='436.064242' font-family='Arial' font-size='12' text-anchor='middle' alignment-baseline='middle' fill='white'>22</text>
+</g>
+<g class='node'>
+<circle cx='774.507885' cy='297.106170' r='14.000000' fill='#69b3a2' stroke='#333' stroke-width='1.2' />
+<text x='774.507885' y='297.106170' font-family='Arial' font-size='12' text-anchor='middle' alignment-baseline='middle' fill='white'>23</text>
+</g>
+<g class='node'>
+<circle cx='316.178855' cy='173.651583' r='14.000000' fill='#69b3a2' stroke='#333' stroke-width='1.2' />
+<text x='316.178855' y='173.651583' font-family='Arial' font-size='12' text-anchor='middle' alignment-baseline='middle' fill='white'>30</text>
+</g>
+<g class='node'>
+<circle cx='534.662859' cy='489.891885' r='14.000000' fill='#69b3a2' stroke='#333' stroke-width='1.2' />
+<text x='534.662859' y='489.891885' font-family='Arial' font-size='12' text-anchor='middle' alignment-baseline='middle' fill='white'>31</text>
+</g>
+<g class='node'>
+<circle cx='797.712830' cy='174.521436' r='14.000000' fill='#69b3a2' stroke='#333' stroke-width='1.2' />
+<text x='797.712830' y='174.521436' font-family='Arial' font-size='12' text-anchor='middle' alignment-baseline='middle' fill='white'>32</text>
+</g>
+<g class='node'>
+<circle cx='574.395495' cy='100.000000' r='14.000000' fill='#69b3a2' stroke='#333' stroke-width='1.2' />
+<text x='574.395495' y='100.000000' font-family='Arial' font-size='12' text-anchor='middle' alignment-baseline='middle' fill='white'>33</text>
+</g>
+</svg>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='800' viewBox='0 0 1200 800'>
+<defs>
+<marker id='arrow' viewBox='0 0 10 10' refX='10' refY='5' markerUnits='strokeWidth' markerWidth='8' markerHeight='6' orient='auto'>
+<path d='M 0 0 L 10 5 L 0 10 z' />
+</marker>
+</defs>
+<rect width='100%' height='100%' fill='white' />
+<path d='M 758.775405 199.494868 A 35.000000 35.000000 0 1 1 744.775405 199.494868' stroke='#999' stroke-width='1.5' fill='none' marker-end='url(#arrow)' />
+<text x='751.775405' y='176.619224' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>00</text>
+<line x1='737.877888' y1='213.310089' x2='319.974771' y2='264.154976' stroke='#999' stroke-width='1.5' marker-end='url(#arrow)' />
+<text x='528.926330' y='238.732532' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>01</text>
+<line x1='746.290979' y1='224.500259' x2='581.372384' y2='611.837419' stroke='#999' stroke-width='1.5' marker-end='url(#arrow)' />
+<text x='663.831681' y='418.168839' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>02</text>
+<line x1='319.974771' y1='264.154976' x2='737.877888' y2='213.310089' stroke='#999' stroke-width='1.5' marker-end='url(#arrow)' />
+<text x='528.926330' y='238.732532' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>10</text>
+<path d='M 313.077254 253.721485 A 35.000000 35.000000 0 1 1 299.077254 253.721485' stroke='#999' stroke-width='1.5' fill='none' marker-end='url(#arrow)' />
+<text x='306.077254' y='230.845841' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>11</text>
+<line x1='314.490344' y1='277.036011' x2='567.474867' y2='613.528283' stroke='#999' stroke-width='1.5' marker-end='url(#arrow)' />
+<text x='440.982606' y='445.282147' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>12</text>
+<line x1='581.372384' y1='611.837419' x2='746.290979' y2='224.500259' stroke='#999' stroke-width='1.5' marker-end='url(#arrow)' />
+<text x='663.831681' y='418.168839' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>20</text>
+<line x1='567.474867' y1='613.528283' x2='314.490344' y2='277.036011' stroke='#999' stroke-width='1.5' marker-end='url(#arrow)' />
+<text x='440.982606' y='445.282147' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>21</text>
+<path d='M 582.887957 612.594098 A 35.000000 35.000000 0 1 1 568.887957 612.594098' stroke='#999' stroke-width='1.5' fill='none' marker-end='url(#arrow)' />
+<text x='575.887957' y='589.718454' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>22</text>
+<g class='node'>
+<circle cx='751.775405' cy='211.619224' r='14.000000' fill='#69b3a2' stroke='#333' stroke-width='1.2' />
+<text x='751.775405' y='211.619224' font-family='Arial' font-size='12' text-anchor='middle' alignment-baseline='middle' fill='white'>0</text>
+</g>
+<g class='node'>
+<circle cx='306.077254' cy='265.845841' r='14.000000' fill='#69b3a2' stroke='#333' stroke-width='1.2' />
+<text x='306.077254' y='265.845841' font-family='Arial' font-size='12' text-anchor='middle' alignment-baseline='middle' fill='white'>1</text>
+</g>
+<g class='node'>
+<circle cx='575.887957' cy='624.718454' r='14.000000' fill='#69b3a2' stroke='#333' stroke-width='1.2' />
+<text x='575.887957' y='624.718454' font-family='Arial' font-size='12' text-anchor='middle' alignment-baseline='middle' fill='white'>2</text>
+</g>
+</svg>

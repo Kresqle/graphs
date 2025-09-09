@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='800' viewBox='0 0 1200 800'>
+<defs>
+<marker id='arrow' viewBox='0 0 10 10' refX='10' refY='5' markerUnits='strokeWidth' markerWidth='8' markerHeight='6' orient='auto'>
+<path d='M 0 0 L 10 5 L 0 10 z' />
+</marker>
+</defs>
+<rect width='100%' height='100%' fill='white' />
+<path d='M 591.692489 370.917273 A 35.000000 35.000000 0 1 1 577.692489 370.917273' stroke='#999' stroke-width='1.5' fill='none' marker-end='url(#arrow)' />
+<text x='584.692489' y='348.041628' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>00</text>
+<line x1='572.602890' y1='375.981771' x2='121.926930' y2='112.804477' stroke='#999' stroke-width='1.5' marker-end='url(#arrow)' />
+<text x='347.264910' y='244.393124' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>01</text>
+<line x1='121.926930' y1='112.804477' x2='572.602890' y2='375.981771' stroke='#999' stroke-width='1.5' marker-end='url(#arrow)' />
+<text x='347.264910' y='244.393124' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>10</text>
+<path d='M 116.837331 93.620264 A 35.000000 35.000000 0 1 1 102.837331 93.620264' stroke='#999' stroke-width='1.5' fill='none' marker-end='url(#arrow)' />
+<text x='109.837331' y='70.744620' font-family='Arial' font-size='10' text-anchor='middle' alignment-baseline='middle'>11</text>
+<g class='node'>
+<circle cx='584.692489' cy='383.041628' r='14.000000' fill='#69b3a2' stroke='#333' stroke-width='1.2' />
+<text x='584.692489' y='383.041628' font-family='Arial' font-size='12' text-anchor='middle' alignment-baseline='middle' fill='white'>0</text>
+</g>
+<g class='node'>
+<circle cx='109.837331' cy='105.744620' r='14.000000' fill='#69b3a2' stroke='#333' stroke-width='1.2' />
+<text x='109.837331' y='105.744620' font-family='Arial' font-size='12' text-anchor='middle' alignment-baseline='middle' fill='white'>1</text>
+</g>
+</svg>

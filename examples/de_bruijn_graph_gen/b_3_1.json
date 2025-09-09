@@ -1,0 +1,19 @@
+{
+  "directed": true,
+  "nodes": [
+    { "id": "0", "label": "0" },
+    { "id": "1", "label": "1" },
+    { "id": "2", "label": "2" }
+  ],
+  "edges": [
+    { "from": "0", "to": "0", "label": "00" },
+    { "from": "0", "to": "1", "label": "01" },
+    { "from": "0", "to": "2", "label": "02" },
+    { "from": "1", "to": "0", "label": "10" },
+    { "from": "1", "to": "1", "label": "11" },
+    { "from": "1", "to": "2", "label": "12" },
+    { "from": "2", "to": "0", "label": "20" },
+    { "from": "2", "to": "1", "label": "21" },
+    { "from": "2", "to": "2", "label": "22" }
+  ]
+}
